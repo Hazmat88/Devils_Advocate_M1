@@ -6443,5 +6443,17 @@ input[type=range]::-ms-thumb {
     bottom: auto;
     text-align: center;
     margin-top: 1.2rem; } }
+.container {
+  height: 1500px;
+  background: green; }
+
+.head0 {
+  height: 100px; }
+
+/*.menu0{
+  top:20px;
+}*/
+.card-bgc {
+  color: black; }
 
 /*# sourceMappingURL=materialize.css.map */
