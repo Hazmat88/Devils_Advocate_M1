@@ -11,7 +11,8 @@ body {
 }
 */
 .head0 {
-  height: 100px; }
+  height: 100px;
+  margin-top: 1rem; }
 
 /*.menu0{
   top:20px;
@@ -31,6 +32,13 @@ img {
 
 textarea {
   color: #BB86FC; }
+
+button {
+  margin-top: 20px; }
+
+.bfa_card {
+  padding-top: -200px;
+  z-index: 10; }
 
 /*.card-bgc{
 background-color:$black_primary ;

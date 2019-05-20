@@ -13,6 +13,7 @@ body{
 */
 .head0{
   height:100px;
+  margin-top: 1rem;
 }
 
 
@@ -41,6 +42,15 @@ img {
 
 textarea{
   color:$element_prim;
+}
+
+button{
+  margin-top:20px;
+}
+
+.bfa_card{
+  padding-top: -200px;
+  z-index: 10;
 }
 
 /*.card-bgc{

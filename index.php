@@ -34,9 +34,9 @@
           </div>
 <!-- ******************** CLOCK *****************************-->
 
-          <div class="col s12 m6 grey darken-3 head0 valign center-block">
-            <div class="clock center-align">
-              <h2 id="clock_style" class=" flow-text"></h2>
+          <div class="col s12 m6 grey darken-4 head0 valign center-wrapper ">
+            <div class="clock valign center-block">
+              <h2 id="clock_style" class="center-align flow-text"></h2>
            </div>
          </div>
 
@@ -88,37 +88,38 @@
 
         <div class="input_">
           <div class="row">
+
                 <div class="input-field col m2 s12">
-
-            <textarea id="dropdown_BDA" class="materialize-textarea"></textarea>
-    <label for="dropdown_BDA">dropdown_BD</label>
-
-          </div>
+                    <textarea id="dropdown_BDA" class="materialize-textarea"></textarea>
+                    <label for="dropdown_BDA">BD</label>
+                </div>
 
                 <div class="input-field col m4 s12">
+                    <textarea id="nameA" class="materialize-textarea"></textarea>
+                    <label for="nameA">Name</label>
+                </div>
 
-            <textarea id="nameA" class="materialize-textarea"></textarea>
-    <label for="nameA">nameB</label>
+                <div class="input-field col m4 s12">
+                      <textarea id="ipaddA" class="materialize-textarea"></textarea>
+                      <label for="ipaddA">IP</label>
+                </div>
 
+                <button id="subhdb" class="waves-effect waves-teal btn-flat col m2 s12" onclick="ipadress('ipaddA','linktitleA','nameA','cam01','frame-area_c1')">
+                  DONE
+                </button>
           </div>
+        </div>
 
-                  <div class="input-field col m4 s12">
-
-            <textarea id="ipaddA" class="materialize-textarea"></textarea>
-    <label for="ipaddA">ip</label>
-          </div>
-
-            <button id="subhdb" class="waves-effect waves-teal btn-flat col m2 s12" onclick="ipadress('ipaddA','linktitleA','nameA','cam01','frame-area_c1')">DONE</button>
-      </div>
-    </div>
         <i class="material-icons right whitecross">more_vert</i>
       </span>
+
       <p class="center-align "><a class="element_second"  id="linktitleA" href="#">This is a link</a></p>
-    </div>
+  </div>
 
 
         <div class="card-reveal grey darken-4">
           <span class="card-title whitecross">Card Title<i class="material-icons right whitecross">close</i></span>
+
           <iframe name="Framename1" src="http://192.168.1.32:8080/" width="100%" height="100%"  class="frame-area_c1" scrolling ="auto">
           </iframe>
         </div>
@@ -132,32 +133,29 @@
     <div class="card grey darken-4">
           <div class="card-image waves-effect waves-block waves-light">
             <img id="browser_video" class="cam02 activator" alt="video" src="images/office.jpg" onclick="" alt="touch to view">
-            <!--<img class="activator" src="images/office.jpg"> -->
+                        <!--<img class="activator" src="images/office.jpg"> -->
           </div>
 
           <div class="card-content">
+
             <span class="card-title activator grey-text text-darken-4">
 
               <div class="input_">
                 <div class="row">
-                      <div class="input-field col m2 s12">
 
-                  <textarea id="dropdown_BD" class="materialize-textarea"></textarea>
-          <label for="dropdown_BD">dropdown_BD</label>
+                  <div class="input-field col m2 s12">
+                      <textarea id="dropdown_BD" class="materialize-textarea"></textarea>
+                      <label for="dropdown_BD">BD</label>
+                 </div>
 
-                </div>
+                  <div class="input-field col m4 s12">
+                      <textarea id="nameB" class="materialize-textarea"></textarea>
+                      <label for="nameB">Name</label>
+                 </div>
 
-                      <div class="input-field col m4 s12">
-
-                  <textarea id="nameB" class="materialize-textarea"></textarea>
-          <label for="nameB">nameB</label>
-
-                </div>
-
-                        <div class="input-field col m4 s12">
-
-                  <textarea id="ipaddB" class="materialize-textarea"></textarea>
-          <label for="ipaddB">ip</label>
+                 <div class="input-field col m4 s12">
+                      <textarea id="ipaddB" class="materialize-textarea"></textarea>
+                      <label for="ipaddB">Ip</label>
                 </div>
 
                   <button id="subhdb" class="waves-effect waves-teal btn-flat col m2 s12" onclick="ipadress('ipaddB','linktitleB','nameB','cam02','frame-area_c2')">DONE</button>
@@ -165,7 +163,7 @@
           </div>
               <i class="material-icons right whitecross">more_vert</i>
             </span>
-            <p class="center-align "><a class="element_second"  id="linktitleB" href="#">This is a link</a></p>
+            <p class="center-align"><a class="element_second btn  "  id="linktitleB" href="#">This is a link</a></p>
           </div>
 
 
