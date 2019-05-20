@@ -1,11 +1,16 @@
+@import "colors.scss";
 
 
 
+body{
+  background-color: $black_bgc;
+}
+/*
 .container{
   height: 1500px;
   background: green;
 }
-
+*/
 .head0{
   height:100px;
 }
@@ -15,11 +20,36 @@
   top:20px;
 }*/
 
-
-.card-bgc{
-color: black;
+h1,h2,h3{
+  color:$white_primary;
 }
 
+.whitecross{
+  color:$white_primary;
+}
+
+img {
+   //height: 100%;
+   background-image: url('../images/office.jpg');
+
+}
+
+#subhda,#subhdb{
+  background-color: $element_prim;
+  border:none;
+}
+
+textarea{
+  color:$element_prim;
+}
+
+/*.card-bgc{
+background-color:$black_primary ;
+}*/
+/*
+.card_reveal{
+  background-color:$black_primary !important;
+}*/
 /*.cam01{
   width:200px;
   height:200px;

@@ -6443,22 +6443,56 @@ input[type=range]::-ms-thumb {
     bottom: auto;
     text-align: center;
     margin-top: 1.2rem; } }
-.container {
-  height: 1500px;
-  background: green; }
+.element_second {
+  color: #03DAC6; }
 
+body {
+  background-color: #191919; }
+
+/*
+.container{
+  height: 1500px;
+  background: green;
+}
+*/
 .head0 {
   height: 100px; }
 
 /*.menu0{
   top:20px;
 }*/
-.card-bgc {
-  color: black; }
+h1, h2, h3 {
+  color: #E3E2E2; }
 
+.whitecross {
+  color: #E3E2E2; }
+
+img {
+  background-image: url("../images/office.jpg"); }
+
+#subhda, #subhdb {
+  background-color: #BB86FC;
+  border: none; }
+
+textarea {
+  color: #BB86FC; }
+
+/*.card-bgc{
+background-color:$black_primary ;
+}*/
+/*
+.card_reveal{
+  background-color:$black_primary !important;
+}*/
 /*.cam01{
   width:200px;
   height:200px;
 }*/
+@media only screen and (max-width: 600px) {
+  .element_second {
+    color: #03DAC6; }
+
+  .head0 {
+    height: 50px; } }
 
 /*# sourceMappingURL=materialize.css.map */

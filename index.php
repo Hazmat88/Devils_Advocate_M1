@@ -12,7 +12,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    </head>
 
-   <body class="grey darken-4">
+   <body>
 
 
      <div class="row">
@@ -21,14 +21,14 @@
     <div class="col s12 m12">
 
 
-          <div class="col s12 m6 grey darken-2 head0 valign center-block">
+          <div class="col s12 m6 grey darken-4 head0 valign center-block">
 
             <?php
               $date = strftime('%A %d %B %Y');
               $date_short = strftime('%d/%m/%y' );
               $heure = date("H:i:s");
 
-              echo "<h3 class='date_style center-align'>$date</h3>";
+              echo "<h3 class='date_style flow-text center-align'>$date</h3>";
               //echo "<h2 class='short_date'>$date_short</h2>";
              ?>
           </div>
@@ -36,7 +36,7 @@
 
           <div class="col s12 m6 grey darken-3 head0 valign center-block">
             <div class="clock center-align">
-              <h2 id="clock_style" class="valign"></h2>
+              <h2 id="clock_style" class=" flow-text"></h2>
            </div>
          </div>
 
@@ -76,47 +76,62 @@
 <!-- ******************** CARD01 *****************************-->
   <div class="col s12 m6">
 
-    <div class="card grey darken-2" >
+    <div class="card grey darken-4" >
 
         <div class="card-image waves-effect waves-block waves-light">
-            <img id="browser_video" class="cam01 activator" alt="video" src="http://192.168.1.36:8080/video" onclick="closeNav2()" alt="touch to view">
+            <img id="browser_video" class="cam01 activator" alt="video" src="images/office.jpg" onclick="closeNav2()" alt="touch to view">
         </div>
 
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">
 
-            <div class="input_">
 
-                <input type="text" id="dropdown_BD" placeholder="Data Base">
+        <div class="input_">
+          <div class="row">
+                <div class="input-field col m2 s12">
 
-                <input type="text" id="nameA" placeholder="Device Name">
+            <textarea id="dropdown_BDA" class="materialize-textarea"></textarea>
+    <label for="dropdown_BDA">dropdown_BD</label>
 
-                <input type="text" id="ipaddA" placeholder="Just Device Number IP" >
+          </div>
 
-                <button id="subhda" onclick="hud_switch('huda','hudA','titleA','link_titleA','ipaddA','nameA','cam01','frame-area_c1')">DONE</button>
-            </div>
+                <div class="input-field col m4 s12">
 
-            <i class="material-icons right">more_vert</i>
-          </span>
+            <textarea id="nameA" class="materialize-textarea"></textarea>
+    <label for="nameA">nameB</label>
 
-            <p><a href="#">This is a link</a></p>
-        </div>
+          </div>
+
+                  <div class="input-field col m4 s12">
+
+            <textarea id="ipaddA" class="materialize-textarea"></textarea>
+    <label for="ipaddA">ip</label>
+          </div>
+
+            <button id="subhdb" class="waves-effect waves-teal btn-flat col m2 s12" onclick="ipadress('ipaddA','linktitleA','nameA','cam01','frame-area_c1')">DONE</button>
+      </div>
+    </div>
+        <i class="material-icons right whitecross">more_vert</i>
+      </span>
+      <p class="center-align "><a class="element_second"  id="linktitleA" href="#">This is a link</a></p>
+    </div>
 
 
-        <div class="card-reveal grey darken-2">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-          <iframe name="Framename1" src="http://192.168.1.36:8080/" width="100%" height="100%"  class="frame-area_c1" scrolling ="auto">
+        <div class="card-reveal grey darken-4">
+          <span class="card-title whitecross">Card Title<i class="material-icons right whitecross">close</i></span>
+          <iframe name="Framename1" src="http://192.168.1.32:8080/" width="100%" height="100%"  class="frame-area_c1" scrolling ="auto">
           </iframe>
         </div>
+
     </div>
 </div>
 
 <!-- ******************** CARD02 *****************************-->
 
 <div class="col s12 m6">
-    <div class="card grey darken-2">
+    <div class="card grey darken-4">
           <div class="card-image waves-effect waves-block waves-light">
-            <img id="browser_video" class="cam01 activator" alt="video" src="http://192.168.1.36:8080/video" onclick="closeNav2()" alt="touch to view">
+            <img id="browser_video" class="cam02 activator" alt="video" src="images/office.jpg" onclick="" alt="touch to view">
             <!--<img class="activator" src="images/office.jpg"> -->
           </div>
 
@@ -124,28 +139,42 @@
             <span class="card-title activator grey-text text-darken-4">
 
               <div class="input_">
+                <div class="row">
+                      <div class="input-field col m2 s12">
 
-                  <input type="text" id="dropdown_BD" placeholder="Data Base">
+                  <textarea id="dropdown_BD" class="materialize-textarea"></textarea>
+          <label for="dropdown_BD">dropdown_BD</label>
 
-                  <input type="text" id="nameA" placeholder="Device Name">
+                </div>
 
-                  <input type="text" id="ipaddA" placeholder="Just Device Number IP" >
+                      <div class="input-field col m4 s12">
 
-                  <button id="subhda" onclick="hud_switch('huda','hudA','titleA','link_titleA','ipaddA','nameA','cam01','frame-area_c1')">DONE</button>
-              </div>
+                  <textarea id="nameB" class="materialize-textarea"></textarea>
+          <label for="nameB">nameB</label>
 
-              <i class="material-icons right">more_vert</i>
+                </div>
+
+                        <div class="input-field col m4 s12">
+
+                  <textarea id="ipaddB" class="materialize-textarea"></textarea>
+          <label for="ipaddB">ip</label>
+                </div>
+
+                  <button id="subhdb" class="waves-effect waves-teal btn-flat col m2 s12" onclick="ipadress('ipaddB','linktitleB','nameB','cam02','frame-area_c2')">DONE</button>
+            </div>
+          </div>
+              <i class="material-icons right whitecross">more_vert</i>
             </span>
-            <p><a href="#">This is a link</a></p>
+            <p class="center-align "><a class="element_second"  id="linktitleB" href="#">This is a link</a></p>
           </div>
 
 
-          <div class="card-reveal grey darken-2">
-            <span class="card-title grey-text text-darken-4">Card Title
-              <i class="material-icons right">close</i>
+          <div class="card-reveal grey darken-4">
+            <span class="card-title whitecross">Card Title
+              <i class="material-icons right whitecross">close</i>
             </span>
 
-            <iframe name="Framename1" src="http://192.168.1.36:8080/" width="100%" height="100%"  class="frame-area_c1" scrolling ="auto">
+            <iframe name="Framename1" src="http://192.168.1.36:8080/" width="100%" height="100%"  class="frame-area_c2" scrolling ="auto">
             </iframe>
           </div>
         </div>

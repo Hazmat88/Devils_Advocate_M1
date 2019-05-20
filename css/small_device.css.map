@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAUA,eAAe;EACb,KAAK,EAHS,OAAO;;ACJvB,MAAM;EACJ,MAAM,EAAC,IAAI",
+"sources": ["../sass/colors.scss","../sass/small_device.scss"],
+"names": [],
+"file": "small_device.css"
+}
