@@ -14,7 +14,6 @@
 
    <body>
 
-
      <div class="row">
 
 <!-- ******************** DATE *****************************-->
@@ -64,6 +63,8 @@
         toolbarEnabled: true
       });
     });
+
+
     </script>
 
 
@@ -76,17 +77,18 @@
 <!-- ******************** CARD01 *****************************-->
   <div class="col s12 m6">
 
+
     <div class="card grey darken-4" >
 
         <div class="card-image waves-effect waves-block waves-light">
-            <img id="browser_video" class="cam01 activator" alt="video" src="images/office.jpg" onclick="closeNav2()" alt="touch to view">
+            <img id="browser_video" class="cam01 activator" alt="video" src="images/pamera.jpg" alt="touch to view">
         </div>
 
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">
 
 
-        <div class="input_">
+        <div class="input_A" id="inputA">
           <div class="row">
 
                 <div class="input-field col m2 s12">
@@ -95,16 +97,16 @@
                 </div>
 
                 <div class="input-field col m4 s12">
-                    <textarea id="nameA" class="materialize-textarea"></textarea>
+                    <input  id="nameA" type="text" class="validate">
                     <label for="nameA">Name</label>
                 </div>
 
                 <div class="input-field col m4 s12">
-                      <textarea id="ipaddA" class="materialize-textarea"></textarea>
-                      <label for="ipaddA">IP</label>
+                      <input  id="ipaddA" type="text" class="validate">
+                      <label for="ipaddA" >IP</label>
                 </div>
 
-                <button id="subhdb" class="waves-effect waves-teal btn-flat col m2 s12" onclick="ipadress('ipaddA','linktitleA','nameA','cam01','frame-area_c1')">
+                <button id="subhda" class="waves-effect waves-teal btn-flat col m2 s12" onclick="ipadress('ipaddA','linktitleA','nameA','cam01','frame-area_c1');btn_hide('inputA')">
                   DONE
                 </button>
           </div>
@@ -113,12 +115,14 @@
         <i class="material-icons right whitecross">more_vert</i>
       </span>
 
-      <p class="center-align "><a class="element_second"  id="linktitleA" href="#">This is a link</a></p>
+      <p class="center-align "><a class="element_second btn"  id="linktitleA" href="#" target="_blank">This is a link</a></p>
   </div>
 
 
         <div class="card-reveal grey darken-4">
-          <span class="card-title whitecross">Card Title<i class="material-icons right whitecross">close</i></span>
+            <a class="element_second btn align-ce "   href="#" onclick="btn_show('inputA')">Back</a>
+          <span class="card-title whitecross">Card Title
+            <i class="material-icons right whitecross">close</i></span>
 
           <iframe name="Framename1" src="http://192.168.1.32:8080/" width="100%" height="100%"  class="frame-area_c1" scrolling ="auto">
           </iframe>
@@ -132,7 +136,7 @@
 <div class="col s12 m6">
     <div class="card grey darken-4">
           <div class="card-image waves-effect waves-block waves-light">
-            <img id="browser_video" class="cam02 activator" alt="video" src="images/office.jpg" onclick="" alt="touch to view">
+            <img id="browser_video" class="cam02 activator" alt="video" src="images/bumera.jpg" onclick="" alt="touch to view">
                         <!--<img class="activator" src="images/office.jpg"> -->
           </div>
 
@@ -140,39 +144,50 @@
 
             <span class="card-title activator grey-text text-darken-4">
 
-              <div class="input_">
+              <div class="input_B" id="inputB">
                 <div class="row">
 
                   <div class="input-field col m2 s12">
-                      <textarea id="dropdown_BD" class="materialize-textarea"></textarea>
-                      <label for="dropdown_BD">BD</label>
-                 </div>
-
-                  <div class="input-field col m4 s12">
-                      <textarea id="nameB" class="materialize-textarea"></textarea>
-                      <label for="nameB">Name</label>
+                    <textarea id="bdB" class="materialize-textarea"></textarea>
+                    <label for="bdB">BD</label>
+            <!--        <select>
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+  <label>BD</label>-->
                  </div>
 
                  <div class="input-field col m4 s12">
-                      <textarea id="ipaddB" class="materialize-textarea"></textarea>
-                      <label for="ipaddB">Ip</label>
-                </div>
+                     <input  id="nameB" type="text" class="validate">
+                     <label for="nameB">Name</label>
+                 </div>
 
-                  <button id="subhdb" class="waves-effect waves-teal btn-flat col m2 s12" onclick="ipadress('ipaddB','linktitleB','nameB','cam02','frame-area_c2')">DONE</button>
+                 <div class="input-field col m4 s12">
+                       <input  id="ipaddB" type="text" class="validate">
+                       <label for="ipaddB" >IP</label>
+                 </div>
+                  
+                  <button id="subhdb" class="waves-effect waves-teal btn-flat col m2 s12" onclick="ipadress('ipaddB','linktitleB','nameB','cam02','frame-area_c2');btn_hide('inputB')">DONE</button>
             </div>
           </div>
               <i class="material-icons right whitecross">more_vert</i>
             </span>
-            <p class="center-align"><a class="element_second btn  "  id="linktitleB" href="#">This is a link</a></p>
+
+              <p class="center-align ">
+                <a class="element_second btn align-ce "  id="linktitleB" href="#" target="_blank">This is a link</a>
+              </p>
           </div>
 
 
           <div class="card-reveal grey darken-4">
+            <a class="element_second btn align-ce "   href="#" onclick="btn_show('inputB')">Back</a>
             <span class="card-title whitecross">Card Title
               <i class="material-icons right whitecross">close</i>
             </span>
 
-            <iframe name="Framename1" src="http://192.168.1.36:8080/" width="100%" height="100%"  class="frame-area_c2" scrolling ="auto">
+            <iframe name="Framename1" src="http://192.168.1.31:8080/" width="100%" height="100%"  class="frame-area_c2" scrolling ="auto">
             </iframe>
           </div>
         </div>

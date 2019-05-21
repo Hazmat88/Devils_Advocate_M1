@@ -1,5 +1,23 @@
+
 clock();
-ipadress(ipaddX,linktitleX,nameX,camX,iframeX);
+input('ipaddA','subhda');
+input('ipaddB','subhdb');
+input('nameA','subhda');
+input('nameB','subhdb');
+
+
+function input(inputi,buttoni) {
+
+  var input = document.getElementById(inputi);
+  input.addEventListener("keyup", function(event) {
+  console.log(input);
+          if (event.keyCode === 13) {
+
+            //  event.preventDefault();
+              document.getElementById(buttoni).click();
+          }
+  });
+}
 
 function clock() {
 
@@ -36,11 +54,21 @@ function ipadress(ipaddi,linktitle,nameI,cami,iframei) {
 
     //iframe_area
     document.getElementsByClassName(iframei)[0].src="http://192.168." + adressip + ":8080";
-  
+
   // Links Titles
     document.getElementById(linktitle).href="http://192.168." + adressip + ":8080";
     document.getElementById(linktitle).innerHTML = linktitleA;
     document.getElementById(linktitle).style.fontWeight = "900";
 
     //document.getElementById("audio").src="http://192.168.1." + adressip + ":8080/video";
+}
+
+function btn_hide(inputi)
+{
+  document.getElementById(inputi).setAttribute("class", "hide");
+}
+
+function btn_show(inputi)
+{
+  document.getElementById(inputi).setAttribute("class", "show");
 }

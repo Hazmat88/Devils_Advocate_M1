@@ -6443,9 +6443,9 @@ input[type=range]::-ms-thumb {
     bottom: auto;
     text-align: center;
     margin-top: 1.2rem; } }
-.element_second {
-  color: #03DAC6; }
-
+/*.element_second{
+  color:$element_second;
+}*/
 body {
   background-color: #191919; }
 
@@ -6475,7 +6475,7 @@ img {
   background-color: #BB86FC;
   border: none; }
 
-textarea {
+textarea, input {
   color: #BB86FC; }
 
 button {
@@ -6484,6 +6484,9 @@ button {
 .bfa_card {
   padding-top: -200px;
   z-index: 10; }
+
+.element_second {
+  color: #222222; }
 
 /*.card-bgc{
 background-color:$black_primary ;
@@ -6497,9 +6500,9 @@ background-color:$black_primary ;
   height:200px;
 }*/
 @media only screen and (max-width: 600px) {
-  .element_second {
-    color: #03DAC6; }
-
+  /*.element_second{
+    color:$element_second;
+  }*/
   .head0 {
     height: 50px; } }
 
