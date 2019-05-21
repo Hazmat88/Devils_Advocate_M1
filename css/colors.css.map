@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAUA;;GAEG",
+"mappings": "AAUA,kBAAkB;EAChB,KAAK,EAHS,OAAO;;AAMvB,cAAc;EACZ,KAAK,EATO,OAAO;;AAYrB,cAAc;EACZ,KAAK,EAhBQ,OAAO",
 "sources": ["../sass/colors.scss"],
 "names": [],
 "file": "colors.css"

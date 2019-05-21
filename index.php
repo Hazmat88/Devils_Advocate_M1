@@ -30,6 +30,7 @@
               echo "<h3 class='date_style flow-text center-align'>$date</h3>";
               //echo "<h2 class='short_date'>$date_short</h2>";
              ?>
+
           </div>
 <!-- ******************** CLOCK *****************************-->
 
@@ -37,11 +38,23 @@
             <div class="clock valign center-block">
               <h2 id="clock_style" class="center-align flow-text"></h2>
            </div>
-         </div>
 
+             <div class="fixed-action-btn menu0 ">
+              <a class="btn-floating btn-large purme">
+                <i class="large material-icons ">menu</i>
+              </a>
+              <ul>
+                <li><a class="btn-floating"><i class="material-icons">insert_chart</i></a></li>
+                <li><a class="btn-floating "><i class="material-icons">add</i></a></li>
+                <li><a class="btn-floating "><i class="material-icons">remove</i></a></li>
+                <li><a class="btn-floating"><i class="material-icons">file_download</i></a></li>
+              </ul>
+            </div>
+
+          </div>
+      </div>
 </div>
-</div>
-<!-- ******************** FAB Floating button action *****************************-->
+<!-- ******************** FAB Floating button action *****************************
           <div class="fixed-action-btn toolbar menu0">
            <a class="btn-floating btn-large red">
              <i class="large material-icons">mode_edit</i>
@@ -53,16 +66,27 @@
              <li><a class="btn-floating"><i class="material-icons">attach_file</i></a></li>
            </ul>
          </div>
-
+-->
 
 <!-- ******************** Script_FAB *****************************-->
       <script>
       document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.fixed-action-btn');
+      if(window.innerWidth <= 600) {
+        console.log("top");
+        var instances = M.FloatingActionButton.init(elems, {
+          direction: 'top',
+        hoverEnabled: false
+        });
+      }
+      else{
+        console.log("buttom");
       var instances = M.FloatingActionButton.init(elems, {
-        toolbarEnabled: true
-      });
-    });
+        direction: 'left',
+      hoverEnabled: false
+    });}
+
+  });
 
 
     </script>
@@ -168,7 +192,7 @@
                        <input  id="ipaddB" type="text" class="validate">
                        <label for="ipaddB" >IP</label>
                  </div>
-                  
+
                   <button id="subhdb" class="waves-effect waves-teal btn-flat col m2 s12" onclick="ipadress('ipaddB','linktitleB','nameB','cam02','frame-area_c2');btn_hide('inputB')">DONE</button>
             </div>
           </div>

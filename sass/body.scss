@@ -16,10 +16,48 @@ body{
   margin-top: 1rem;
 }
 
+/*.material-icons{
+color:rgba(187,134,252,1);
 
-/*.menu0{
-  top:20px;
 }*/
+
+//********** FAB ***************
+/*
+.menu0{
+  position:absolute;
+  top:70px;
+  //color:$element_prim !important;
+//  opacity:0.8;
+}*/
+
+.fixed-action-btn{
+  //position:absolute;
+//  top:85px;
+  bottom:84%;
+}
+
+.purme{
+  background-color:$element_second !important;
+
+    i{
+      color:$black_primary;
+    }
+
+}
+
+.btn-floating i{
+  background-color:$element_second !important;
+  color:$black_primary!important;
+}
+
+.fixed-action-btn ul{
+  top:130px;
+  bottom:500px;
+}
+
+.black_elem{
+  color:$black_primary;
+}
 
 h1,h2,h3{
   color:$white_primary;
@@ -55,6 +93,10 @@ button{
 
 .element_second{
   color:$black_primary;
+}
+
+.rightfab{
+  float:right;
 }
 
 /*.card-bgc{

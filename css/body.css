@@ -1,6 +1,12 @@
-/*.element_second{
-  color:$element_second;
-}*/
+.element_secondary {
+  color: #03DAC6; }
+
+.elemt_primary {
+  color: #BB86FC; }
+
+.black_primary {
+  color: #222222; }
+
 body {
   background-color: #191919; }
 
@@ -14,9 +20,36 @@ body {
   height: 100px;
   margin-top: 1rem; }
 
-/*.menu0{
-  top:20px;
+/*.material-icons{
+color:rgba(187,134,252,1);
+
 }*/
+/*
+.menu0{
+  position:absolute;
+  top:70px;
+  //color:$element_prim !important;
+//  opacity:0.8;
+}*/
+.fixed-action-btn {
+  bottom: 84%; }
+
+.purme {
+  background-color: #03DAC6 !important; }
+  .purme i {
+    color: #222222; }
+
+.btn-floating i {
+  background-color: #03DAC6 !important;
+  color: #222222 !important; }
+
+.fixed-action-btn ul {
+  top: 130px;
+  bottom: 500px; }
+
+.black_elem {
+  color: #222222; }
+
 h1, h2, h3 {
   color: #E3E2E2; }
 
@@ -42,6 +75,9 @@ button {
 
 .element_second {
   color: #222222; }
+
+.rightfab {
+  float: right; }
 
 /*.card-bgc{
 background-color:$black_primary ;

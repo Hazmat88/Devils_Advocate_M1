@@ -5,3 +5,29 @@
 .head0{
   height:50px;
 }
+
+.btn-floating {
+
+
+}
+
+
+.fixed-action-btn{
+  position:fixed;
+  bottom:23px;
+  margin-bottom:0px;
+}
+
+.fixed-action-btn ul{
+  top:unset;
+  bottom:100px !important;
+}
+// SIZE FAB
+/*.btn-floating.btn-large{
+  width: 40px;
+  height:40px;
+}
+.btn-floating.btn-large i{
+      line-height: 30px;;
+
+}*/

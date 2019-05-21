@@ -1,7 +1,31 @@
-/*.element_second{
-  color:$element_second;
-}*/
+.element_secondary {
+  color: #03DAC6; }
+
+.elemt_primary {
+  color: #BB86FC; }
+
+.black_primary {
+  color: #222222; }
+
 .head0 {
   height: 50px; }
+
+.fixed-action-btn {
+  position: fixed;
+  bottom: 23px;
+  margin-bottom: 0px; }
+
+.fixed-action-btn ul {
+  top: unset;
+  bottom: 100px !important; }
+
+/*.btn-floating.btn-large{
+  width: 40px;
+  height:40px;
+}
+.btn-floating.btn-large i{
+      line-height: 30px;;
+
+}*/
 
 /*# sourceMappingURL=small_device.css.map */
