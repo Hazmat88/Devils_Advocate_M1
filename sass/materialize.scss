@@ -43,6 +43,11 @@
 
 
 @import "body";
+
 @media #{$small-and-down} {
    @import "small_device";
  }
+
+ @media #{$medium-and-down} {
+    @import "medium";
+}

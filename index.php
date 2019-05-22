@@ -72,14 +72,14 @@
       <script>
       document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.fixed-action-btn');
-      if(window.innerWidth <= 600) {
+      if(window.innerWidth <= 600 || window.innerWidth <= 900 ) {
         console.log("top");
         var instances = M.FloatingActionButton.init(elems, {
           direction: 'top',
         hoverEnabled: false
         });
       }
-      else{
+      else {
         console.log("buttom");
       var instances = M.FloatingActionButton.init(elems, {
         direction: 'left',

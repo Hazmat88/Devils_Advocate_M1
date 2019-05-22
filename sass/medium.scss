@@ -1,0 +1,13 @@
+@import "colors.scss";
+
+
+.fixed-action-btn{
+  position:fixed;
+  bottom:23px;
+  margin-bottom:0px;
+}
+
+.fixed-action-btn ul{
+  top:unset;
+  bottom:100px !important;
+} 
