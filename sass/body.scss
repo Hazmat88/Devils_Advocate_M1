@@ -73,7 +73,7 @@ img {
 
 }
 
-#subhda,#subhdb{
+#subhda,#subhdb,#subhdc,#subhdd{
   background-color: $element_prim;
   border:none;
 }
@@ -84,6 +84,8 @@ textarea,input{
 
 button{
   margin-top:20px;
+  background-color: $element_prim;
+  border:none;
 }
 
 .bfa_card{

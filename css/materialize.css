@@ -6504,7 +6504,7 @@ h1, h2, h3 {
 img {
   background-image: url("../images/office.jpg"); }
 
-#subhda, #subhdb {
+#subhda, #subhdb, #subhdc, #subhdd {
   background-color: #BB86FC;
   border: none; }
 
@@ -6512,7 +6512,9 @@ textarea, input {
   color: #BB86FC; }
 
 button {
-  margin-top: 20px; }
+  margin-top: 20px;
+  background-color: #BB86FC;
+  border: none; }
 
 .bfa_card {
   padding-top: -200px;
@@ -6563,6 +6565,9 @@ background-color:$black_primary ;
   }
   .btn-floating.btn-large i{
         line-height: 30px;;
+  
+  }*/
+  /*.m2_C3,.m2_C4{
   
   }*/ }
 @media only screen and (max-width: 992px) {

@@ -2,8 +2,17 @@
 clock();
 input('ipaddA','subhda');
 input('ipaddB','subhdb');
+input('ipaddC','subhdc');
+input('ipaddD','subhdd');
+
+
 input('nameA','subhda');
 input('nameB','subhdb');
+input('nameC','subhdc');
+input('nameD','subhdd');
+
+//SHOW - HIDE THE 2ND ROW OF CAMERAS modules2
+
 
 
 function input(inputi,buttoni) {
@@ -52,7 +61,7 @@ function ipadress(ipaddi,linktitle,nameI,cami,iframei) {
   //Changement/Effects of transformations
     document.getElementsByClassName(cami)[0].src="http://192.168." + adressip + ":8080/video";
 
-    //iframe_area
+  //iframe_area
     document.getElementsByClassName(iframei)[0].src="http://192.168." + adressip + ":8080";
 
   // Links Titles
@@ -63,12 +72,24 @@ function ipadress(ipaddi,linktitle,nameI,cami,iframei) {
     //document.getElementById("audio").src="http://192.168.1." + adressip + ":8080/video";
 }
 
+// FUNCTION TO ADD AN GRAPHIC IFRAME Need ABSTRACTION***
+function btn_gr(camY){
+  var ifra = "<iframe name=''Framename1' src='http://192.168.1.36:8080/sensors.html' width='100%' height='100%'   scrolling ='auto'></iframe>";
+
+  document.getElementsByClassName(camY)[0].setAttribute("class", "hide");
+
+  document.getElementById('bra').innerHTML = ifra;
+
+}
+
 function btn_hide(inputi)
 {
-  document.getElementById(inputi).setAttribute("class", "hide");
+  document.getElementById(inputi).setAttribute("class", "row hide");
 }
 
 function btn_show(inputi)
 {
-  document.getElementById(inputi).setAttribute("class", "show");
+  document.getElementById(inputi).setAttribute("class", "row show");
 }
+
+//BASIC FUNCTION FOR THE 2ND ROW OF TWO OTHER CAMERAS
