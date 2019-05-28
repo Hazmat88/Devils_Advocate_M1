@@ -45,7 +45,7 @@
               </a>
               <ul>
                 <li><a class="btn-floating"><i class="material-icons">insert_chart</i></a></li>
-                <li><a onclick="btn_show('modules2')" class="btn-floating "><i class="material-icons">add</i></a></li>
+                <li><a onclick="btn_show_fab('modules2')" class="btn-floating "><i class="material-icons">add</i></a></li>
                 <li><a onclick="btn_hide('modules2')" class="btn-floating "><i class="material-icons">remove</i></a></li>
                 <li><a class="btn-floating"><i class="material-icons">file_download</i></a></li>
               </ul>
@@ -106,7 +106,10 @@
 <!-- +++++******************* BUILD ABSTRACTION GRAPHIC IFRAME id=bra, function hide cam01, Insert Graphic Iframe onclick Button into Iframe place of the img cards so place of camera, details the iframe as not same dimension of camera so need to fix it too
 IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
         <div id="bra" class="card-image waves-effect waves-block waves-light">
-            <img id="browser_video" class="cam01 activator" alt="video" src="images/pamera.jpg" alt="touch to view">
+          <img id="browser_video" class="cam01 activator" alt="video" src="images/pamera.jpg" onclick="" alt="touch to view">
+      <!--    <iframe name="Framename1" src="http://192.168.1.36:8080/" width="100%" height="100%"  class="frame-area_c2" scrolling ="auto">
+          </iframe>
+           <iframe name='Framename1' src='http://192.168.1.36:8080/sensors.html' width='100%' height='100%'   scrolling ='auto'></iframe>-->
         </div>
 
         <div class="card-content">
@@ -153,7 +156,8 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
           <span class="card-title whitecross">Card Title
             <i class="material-icons right whitecross">close</i></span>
 
-          <iframe name="Framename1" src="http://192.168.1.32:8080/" width="100%" height="100%"  class="frame-area_c1" scrolling ="auto">
+        <!--  <iframe name='Framename1' src='http://192.168.1.36:8080/sensors.html' width='100%' height='100%'   scrolling ='auto'></iframe>-->
+           <iframe name="Framename1" src="http://192.168.1.36:8080/" width="100%" height="100%"  class="frame-area_c1" scrolling ="auto">
           </iframe>
         </div>
 
