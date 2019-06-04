@@ -6531,6 +6531,9 @@ button {
   position: relative;
   height: 500px; }
 
+.btn-ctrl {
+  margin-right: 20px; }
+
 /*.card-bgc{
 background-color:$black_primary ;
 }*/
@@ -6568,6 +6571,9 @@ background-color:$black_primary ;
     display: block;
     position: relative;
     height: 200px; }
+
+  .btn-grd {
+    margin-top: 10px; }
 
   /*.btn-floating.btn-large{
     width: 40px;

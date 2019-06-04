@@ -112,47 +112,68 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
            <iframe name='Framename1' src='http://192.168.1.36:8080/sensors.html' width='100%' height='100%'   scrolling ='auto'></iframe>-->
         </div>
 
-
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">
-
+  <div class="card-content">
 
         <div class="input_A" id="inputA">
+
+            <div class="row">
+              <!-- issu about media size fix with div col for the config butttons & another div col for the link button
+                other issue the actvator window show when press button but not for the link button -->
+                  <div class="input-field col m2 s12">
+                      <textarea id="dropdown_BDA" class="materialize-textarea"></textarea>
+                      <label for="dropdown_BDA">BD</label>
+                  </div>
+
+                  <div class="input-field col m4 s12">
+                      <input  id="nameA" type="text" class="validate">
+                      <label for="nameA">Name</label>
+                  </div>
+
+                  <div class="input-field col m4 s12">
+                        <input  id="ipaddA" type="text" class="validate">
+                        <label for="ipaddA" >IP</label>
+                  </div>
+
+                  <button id="subhda" class="waves-effect waves-teal btn-flat col m2 s12" onclick="ipadress('ipaddA','linktitleA','nameA','cam01','frame-area_c1');btn_hide('inputA')">
+                    DONE
+                  </button>
+              </div>
+
+          </div>
+
+
+
           <div class="row">
 
-                <div class="input-field col m2 s12">
-                    <textarea id="dropdown_BDA" class="materialize-textarea"></textarea>
-                    <label for="dropdown_BDA">BD</label>
+                <span class="col l1 m1 s1 card-title activator grey-text text-darken-4 right"><i class="material-icons right whitecross">more_vert</i></span>
+
+
+                <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
+                  <a class=" element_second " onclick="btn_gr('cam01')"><i class="material-icons">insert_chart</i></a>
                 </div>
 
-                <div class="input-field col m4 s12">
-                    <input  id="nameA" type="text" class="validate">
-                    <label for="nameA">Name</label>
+                <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
+                  <a class="element_second " onclick="btn_show('inputA')"><i class="material-icons">arrow_back</i></a>
                 </div>
 
-                <div class="input-field col m4 s12">
-                      <input  id="ipaddA" type="text" class="validate">
-                      <label for="ipaddA" >IP</label>
+                <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
+                  <a class="element_second  " onclick="ipadress('ipaddA','linktitleA','nameA','cam01','frame-area_c1');btn_hide('inputA')"><i class="material-icons">settings_backup_restore</i></a>
                 </div>
 
-                <button id="subhda" class="waves-effect waves-teal btn-flat col m2 s12" onclick="ipadress('ipaddA','linktitleA','nameA','cam01','frame-area_c1');btn_hide('inputA')">
-                  DONE
-                </button>
+                <div class="col l3 m2 s12 center-align btn-small waves-effect waves-light btn-grd">
+                  <a class="element_second  "  id="linktitleA" href="#" target="_blank">This is a link</a>
+                </div>
+
           </div>
-        </div>
 
-        <i class="material-icons right whitecross">more_vert</i>
-      </span>
-
-      <p class="center-align "><a class="element_second btn"  id="linktitleA" href="#" target="_blank">This is a link</a></p>
   </div>
 
 
         <div class="card-reveal grey darken-4">
-            <a class="element_second btn align-ce "   href="#" onclick="btn_show('inputA')">Back</a>
+        <!--     <a class="element_second btn align-ce "   href="#" onclick="btn_show('inputA')">Back</a>
 
-<!-- ++++++******************* BUILD BUTTON ABSTRACTION GRAPHIC IFRAME ***********************-->
-            <a class="element_second btn align-ce "   href="#" onclick="btn_gr('cam01')">Graph</a>
+++++++******************* BUILD BUTTON ABSTRACTION GRAPHIC IFRAME ***********************
+            <a class="element_second btn align-ce "   href="#" onclick="btn_gr('cam01')">Graph</a>-->
 
           <span class="card-title whitecross">Card Title
             <i class="material-icons right whitecross">close</i></span>

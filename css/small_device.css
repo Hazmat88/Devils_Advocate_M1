@@ -24,6 +24,9 @@
   position: relative;
   height: 200px; }
 
+.btn-grd {
+  margin-top: 10px; }
+
 /*.btn-floating.btn-large{
   width: 40px;
   height:40px;

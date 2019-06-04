@@ -60,24 +60,28 @@ function ipadress(ipaddi,linktitle,nameI,cami,iframei) {
 
   //Changement/Effects of transformations
     document.getElementsByClassName(cami)[0].src="http://192.168." + adressip + ":8080/video";
+    //document.getElementsByClassName(cami)[0].setAttribute("class", "show");
 
   //iframe_area
     document.getElementsByClassName(iframei)[0].src="http://192.168." + adressip + ":8080";
-
+    document.getElementsByClassName(cami)[0].style.display = "block";
+    $('.graphifra').remove();
   // Links Titles
     document.getElementById(linktitle).href="http://192.168." + adressip + ":8080";
     document.getElementById(linktitle).innerHTML = linktitleA;
     document.getElementById(linktitle).style.fontWeight = "900";
+
 
     //document.getElementById("audio").src="http://192.168.1." + adressip + ":8080/video";
 }
 
 // FUNCTION TO ADD AN GRAPHIC IFRAME Need ABSTRACTION***
 function btn_gr(camY){
-  var ifra = "<iframe  name='Framename1' src='http://192.168.1.36:8080/sensors.html' width='100%'  height:'500px' class='framecs1 activator'  scrolling ='auto'><div class='activator'></div></iframe>";
+  var ifra = "<iframe name='Framename1' src='http://192.168.1.36:8080/sensors.html' width='100%'  height:'500px' class='framecs1 graphifra'  scrolling ='auto'></iframe>";
 
 
-  document.getElementsByClassName(camY)[0].setAttribute("class", "hide");
+  document.getElementsByClassName(camY)[0].style.display = "none";
+  //document.getElementById('bra').innerHTML = ifra;
 $('#bra').append(ifra);
 //  document.getElementById('bra').innerHTML = ifra;
    //document.getElementsByClassName(camY)[0].setAttribute("class", "show");
