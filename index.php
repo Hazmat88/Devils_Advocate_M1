@@ -112,6 +112,7 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
            <iframe name='Framename1' src='http://192.168.1.36:8080/sensors.html' width='100%' height='100%'   scrolling ='auto'></iframe>-->
         </div>
 
+
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">
 
@@ -354,6 +355,11 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
      <script type="text/javascript" src="js/bin/materialize.min.js"></script>
      <script src="js/main.js"></script>
+     <script>
+     $( document ).ready(function() {
+console.log( "document loaded" );
+});
+     </script>
 
    </body>
  </html>

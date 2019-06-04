@@ -16,4 +16,9 @@
   top: unset;
   bottom: 100px !important; }
 
+.framecs1 {
+  display: block;
+  position: relative;
+  height: 300px; }
+
 /*# sourceMappingURL=medium.css.map */

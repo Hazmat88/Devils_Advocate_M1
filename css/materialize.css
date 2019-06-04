@@ -6526,6 +6526,11 @@ button {
 .rightfab {
   float: right; }
 
+.framecs1 {
+  display: block;
+  position: relative;
+  height: 500px; }
+
 /*.card-bgc{
 background-color:$black_primary ;
 }*/
@@ -6559,6 +6564,11 @@ background-color:$black_primary ;
     top: unset;
     bottom: 100px !important; }
 
+  .framecs1 {
+    display: block;
+    position: relative;
+    height: 200px; }
+
   /*.btn-floating.btn-large{
     width: 40px;
     height:40px;
@@ -6587,6 +6597,11 @@ background-color:$black_primary ;
 
   .fixed-action-btn ul {
     top: unset;
-    bottom: 100px !important; } }
+    bottom: 100px !important; }
+
+  .framecs1 {
+    display: block;
+    position: relative;
+    height: 300px; } }
 
 /*# sourceMappingURL=materialize.css.map */
