@@ -47,6 +47,7 @@ function clock() {
 
 
 //FUNCTION IP ADRESS Abstration ex:paramater fot link titleA "link_titleA" Abstract in progress
+// ADD variable for graphic iframe class than graphira
 function ipadress(ipaddi,linktitle,nameI,cami,iframei) {
   //Variables
     var name = document.getElementById(nameI).value;
@@ -76,13 +77,18 @@ function ipadress(ipaddi,linktitle,nameI,cami,iframei) {
 }
 
 // FUNCTION TO ADD AN GRAPHIC IFRAME Need ABSTRACTION***
-function btn_gr(camY){
-  var ifra = "<iframe name='Framename1' src='http://192.168.1.36:8080/sensors.html' width='100%'  height:'500px' class='framecs1 graphifra'  scrolling ='auto'></iframe>";
+// ADD variable for graphic iframe class than graphira
+function btn_gr(cardY,ipaddY,camY){
 
+  var adressip =  document.getElementById(ipaddY).value;
+  var fulladdressip = "192.168." + adressip + ":8080";
 
+  var ifra = "<iframe name='Framename1' src='http://" + fulladdressip + "/sensors.html' width='100%'  height:'500px' class='framecs1 graphifra'  scrolling ='auto'></iframe>";
+
+  console.log(ifra);
   document.getElementsByClassName(camY)[0].style.display = "none";
   //document.getElementById('bra').innerHTML = ifra;
-$('#bra').append(ifra);
+$("#"+ cardY).append(ifra);
 //  document.getElementById('bra').innerHTML = ifra;
    //document.getElementsByClassName(camY)[0].setAttribute("class", "show");
 //console.log(document.getElementById('bra').getAttribute );
@@ -93,9 +99,9 @@ $('#bra').append(ifra);
   //  document.getElementsByClassName(camY)[0].setAttribute("class", "show");
 //  }
 
-
-
 }
+
+
 
 function btn_hide(inputi)
 {

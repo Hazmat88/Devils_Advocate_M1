@@ -105,8 +105,10 @@
 
 <!-- +++++******************* BUILD ABSTRACTION GRAPHIC IFRAME id=bra, function hide cam01, Insert Graphic Iframe onclick Button into Iframe place of the img cards so place of camera, details the iframe as not same dimension of camera so need to fix it too
 IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
-        <div id="bra" class="card-image waves-effect waves-block waves-light">
-          <img id="browser_video" class="cam01 activator" alt="video" src="images/pamera.jpg" onclick="" alt="touch to view">
+        <div id="cardA" class="card-image waves-effect waves-block waves-light">
+
+          <img id="browser_video" class="cam01 activator " alt="video" src="images/pamera.jpg" onclick="" alt="touch to view" >
+
       <!--    <iframe name="Framename1" src="http://192.168.1.36:8080/" width="100%" height="100%"  class="frame-area_c2" scrolling ="auto">
           </iframe>
            <iframe name='Framename1' src='http://192.168.1.36:8080/sensors.html' width='100%' height='100%'   scrolling ='auto'></iframe>-->
@@ -143,13 +145,13 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
 
 
 
-          <div class="row">
+          <div class="row wrapp-ctrl">
 
                 <span class="col l1 m1 s1 card-title activator grey-text text-darken-4 right"><i class="material-icons right whitecross">more_vert</i></span>
 
 
                 <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
-                  <a class=" element_second " onclick="btn_gr('cam01')"><i class="material-icons">insert_chart</i></a>
+                  <a class=" element_second " onclick="btn_gr('cardA','ipaddA','cam01')"><i class="material-icons">insert_chart</i></a>
                 </div>
 
                 <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
@@ -189,17 +191,18 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
 <!-- ******************** CARD02 *****************************-->
 
 <div class="col s12 m6">
+
     <div class="card grey darken-4">
-          <div class="card-image waves-effect waves-block waves-light">
+
+          <div id="cardB" class="card-image waves-effect waves-block waves-light">
             <img id="browser_video" class="cam02 activator" alt="video" src="images/bumera.jpg" onclick="" alt="touch to view">
                         <!--<img class="activator" src="images/office.jpg"> -->
           </div>
 
-          <div class="card-content">
-
-            <span class="card-title activator grey-text text-darken-4">
+      <div class="card-content">
 
               <div class="input_B" id="inputB">
+
                 <div class="row">
 
                   <div class="input-field col m2 s12">
@@ -225,19 +228,39 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
                  </div>
 
                   <button id="subhdb" class="waves-effect waves-teal btn-flat col m2 s12" onclick="ipadress('ipaddB','linktitleB','nameB','cam02','frame-area_c2');btn_hide('inputB')">DONE</button>
-            </div>
-          </div>
-              <i class="material-icons right whitecross">more_vert</i>
-            </span>
+                </div>
 
-              <p class="center-align ">
-                <a class="element_second btn align-ce "  id="linktitleB" href="#" target="_blank">This is a link</a>
-              </p>
           </div>
+
+
+
+          <div class="row wrapp-ctrl">
+
+                <span class="col l1 m1 s1 card-title activator grey-text text-darken-4 right"><i class="material-icons right whitecross">more_vert</i></span>
+
+
+                <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
+                  <a class=" element_second " onclick="btn_gr('cardB','ipaddB','cam02')"><i class="material-icons">insert_chart</i></a>
+                </div>
+
+                <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
+                  <a class="element_second " onclick="btn_show('inputB')"><i class="material-icons">arrow_back</i></a>
+                </div>
+
+                <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
+                  <a class="element_second  " onclick="ipadress('ipaddB','linktitleB','nameB','cam02','frame-area_c2');btn_hide('inputB')"><i class="material-icons">settings_backup_restore</i></a>
+                </div>
+
+                <div class="col l3 m2 s12 center-align btn-small waves-effect waves-light btn-grd">
+                  <a class="element_second  "  id="linktitleB" href="#" target="_blank">This is a link</a>
+                </div>
+
+          </div>
+  </div>
 
 
           <div class="card-reveal grey darken-4">
-            <a class="element_second btn align-ce "   href="#" onclick="btn_show('inputB')">Back</a>
+
             <span class="card-title whitecross">Card Title
               <i class="material-icons right whitecross">close</i>
             </span>
@@ -245,10 +268,12 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
             <iframe name="Framename1" src="http://192.168.1.31:8080/" width="100%" height="100%"  class="frame-area_c2" scrolling ="auto">
             </iframe>
           </div>
-        </div>
-    </div>
 
+
+    </div>
 </div>
+
+
 
 
 <!-- ********************************************************-->
@@ -263,12 +288,12 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
 
     <div class="card grey darken-4" >
 
-        <div class="card-image waves-effect waves-block waves-light">
+        <div id="cardC" class="card-image waves-effect waves-block waves-light">
             <img id="browser_video" class="cam03 activator" alt="video" src="images/bumera.jpg" alt="touch to view">
         </div>
 
         <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">
+
 
 
         <div class="input_C" id="inputC">
@@ -295,15 +320,31 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
           </div>
         </div>
 
-        <i class="material-icons right whitecross">more_vert</i>
-      </span>
+        <div class="row wrapp-ctrl">
 
-      <p class="center-align "><a class="element_second btn"  id="linktitleC" href="#" target="_blank">This is a link</a></p>
+              <span class="col l1 m1 s1 card-title activator grey-text text-darken-4 right"><i class="material-icons right whitecross">more_vert</i></span>
+
+
+              <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
+                <a class=" element_second " onclick="btn_gr('cardC','ipaddC','cam03')"><i class="material-icons">insert_chart</i></a>
+              </div>
+
+              <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
+                <a class="element_second " onclick="btn_show('inputC')"><i class="material-icons">arrow_back</i></a>
+              </div>
+
+              <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
+                <a class="element_second  " onclick="ipadress('ipaddC','linktitleC','nameC','cam03','frame-area_c3');btn_hide('inputC')"><i class="material-icons">settings_backup_restore</i></a>
+              </div>
+
+              <div class="col l3 m2 s12 center-align btn-small waves-effect waves-light btn-grd">
+                <a class="element_second  "  id="linktitleC" href="#" target="_blank">This is a link</a>
+              </div>
+
+        </div>
   </div>
 
-
         <div class="card-reveal grey darken-4">
-            <a class="element_second btn align-ce "   href="#" onclick="btn_show('inputC')">Back</a>
           <span class="card-title whitecross">Card Title
             <i class="material-icons right whitecross">close</i></span>
 
@@ -318,14 +359,13 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
 
 <div id="m2_C4" class="col s12 m6">
     <div class="card grey darken-4">
-          <div class="card-image waves-effect waves-block waves-light">
+          <div id="cardD" class="card-image waves-effect waves-block waves-light">
             <img id="browser_video" class="cam04 activator" alt="video" src="images/pamera.jpg" onclick="" alt="touch to view">
                         <!--<img class="activator" src="images/office.jpg"> -->
           </div>
 
           <div class="card-content">
 
-            <span class="card-title activator grey-text text-darken-4">
 
               <div class="input_D" id="inputD">
                 <div class="row">
@@ -348,17 +388,34 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
                   <button id="subhdd" class="waves-effect waves-teal btn-flat col m2 s12" onclick="ipadress('ipaddD','linktitleD','nameD','cam04','frame-area_c4');btn_hide('inputD')">DONE</button>
             </div>
           </div>
-              <i class="material-icons right whitecross">more_vert</i>
-            </span>
 
-              <p class="center-align ">
-                <a class="element_second btn align-ce "  id="linktitleD" href="#" target="_blank">This is a link</a>
-              </p>
+    <div class="row wrapp-ctrl">
+
+                <span class="col l1 m1 s1 card-title activator grey-text text-darken-4 right"><i class="material-icons right whitecross">more_vert</i></span>
+
+
+                <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
+                  <a class=" element_second " onclick="btn_gr('cardD','ipaddD','cam04')"><i class="material-icons">insert_chart</i></a>
+                </div>
+
+                <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
+                  <a class="element_second " onclick="btn_show('inputD')"><i class="material-icons">arrow_back</i></a>
+                </div>
+
+                <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
+                  <a class="element_second  " onclick="ipadress('ipaddD','linktitleD','nameD','cam04','frame-area_c4');btn_hide('inputD')"><i class="material-icons">settings_backup_restore</i></a>
+                </div>
+
+                <div class="col l3 m2 s12 center-align btn-small waves-effect waves-light btn-grd">
+                  <a class="element_second  "  id="linktitleD" href="#" target="_blank">This is a link</a>
+                </div>
+
           </div>
+  </div>
 
 
           <div class="card-reveal grey darken-4">
-            <a class="element_second btn align-ce "   href="#" onclick="btn_show('inputD')">Back</a>
+
             <span class="card-title whitecross">Card Title
               <i class="material-icons right whitecross">close</i>
             </span>
