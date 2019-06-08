@@ -47,9 +47,15 @@
                 <li><a class="btn-floating"><i class="material-icons">insert_chart</i></a></li>
                 <li><a onclick="btn_show_fab('modules2')" class="btn-floating "><i class="material-icons">add</i></a></li>
                 <li><a onclick="btn_hide('modules2')" class="btn-floating "><i class="material-icons">remove</i></a></li>
-                <li><a class="btn-floating"><i class="material-icons">file_download</i></a></li>
+                <li><a class="btn-floating"><i class="material-icons" onclick="console.log(debug())">file_download</i></a></li>
               </ul>
             </div>
+
+            <script>
+
+
+
+          </script>
 
           </div>
       </div>
@@ -105,9 +111,10 @@
 
 <!-- +++++******************* BUILD ABSTRACTION GRAPHIC IFRAME id=bra, function hide cam01, Insert Graphic Iframe onclick Button into Iframe place of the img cards so place of camera, details the iframe as not same dimension of camera so need to fix it too
 IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
-        <div id="cardA" class="card-image waves-effect waves-block waves-light">
+        <div  class="card-image waves-effect waves-block waves-light">
 
-          <img id="browser_video" class="cam01 activator " alt="video" src="images/pamera.jpg" onclick="" alt="touch to view" >
+          <img id="browser_video" class="cam01 activator " alt="video" src="images/pamera.jpg"  alt="touch to view" >
+              <div id="cardA"></div>
 
       <!--    <iframe name="Framename1" src="http://192.168.1.36:8080/" width="100%" height="100%"  class="frame-area_c2" scrolling ="auto">
           </iframe>
@@ -151,7 +158,7 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
 
 
                 <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
-                  <a class=" element_second " onclick="btn_gr('cardA','ipaddA','cam01')"><i class="material-icons">insert_chart</i></a>
+                  <a class=" element_second " onclick="btn_gr('cardA','ipaddA','cam01','graphA')"><i class="material-icons">insert_chart</i></a>
                 </div>
 
                 <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
@@ -194,9 +201,10 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
 
     <div class="card grey darken-4">
 
-          <div id="cardB" class="card-image waves-effect waves-block waves-light">
+          <div  class="card-image waves-effect waves-block waves-light">
             <img id="browser_video" class="cam02 activator" alt="video" src="images/bumera.jpg" onclick="" alt="touch to view">
                         <!--<img class="activator" src="images/office.jpg"> -->
+                        <div id="cardB"></div>
           </div>
 
       <div class="card-content">
@@ -240,7 +248,7 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
 
 
                 <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
-                  <a class=" element_second " onclick="btn_gr('cardB','ipaddB','cam02')"><i class="material-icons">insert_chart</i></a>
+                  <a class=" element_second " onclick="btn_gr('cardB','ipaddB','cam02','graphB')"><i class="material-icons">insert_chart</i></a>
                 </div>
 
                 <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
@@ -288,8 +296,9 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
 
     <div class="card grey darken-4" >
 
-        <div id="cardC" class="card-image waves-effect waves-block waves-light">
+        <div  class="card-image waves-effect waves-block waves-light">
             <img id="browser_video" class="cam03 activator" alt="video" src="images/bumera.jpg" alt="touch to view">
+            <div id="cardC"></div>
         </div>
 
         <div class="card-content">
@@ -326,7 +335,7 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
 
 
               <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
-                <a class=" element_second " onclick="btn_gr('cardC','ipaddC','cam03')"><i class="material-icons">insert_chart</i></a>
+                <a class=" element_second " onclick="btn_gr('cardC','ipaddC','cam03','graphC')"><i class="material-icons">insert_chart</i></a>
               </div>
 
               <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
@@ -359,9 +368,10 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
 
 <div id="m2_C4" class="col s12 m6">
     <div class="card grey darken-4">
-          <div id="cardD" class="card-image waves-effect waves-block waves-light">
+          <div  class="card-image waves-effect waves-block waves-light">
             <img id="browser_video" class="cam04 activator" alt="video" src="images/pamera.jpg" onclick="" alt="touch to view">
                         <!--<img class="activator" src="images/office.jpg"> -->
+                        <div id="cardD"></div>
           </div>
 
           <div class="card-content">
@@ -395,7 +405,7 @@ IMPORTANT NEED FUNCTION TO CALLBACK ***********************-->
 
 
                 <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
-                  <a class=" element_second " onclick="btn_gr('cardD','ipaddD','cam04')"><i class="material-icons">insert_chart</i></a>
+                  <a class=" element_second " onclick="btn_gr('cardD','ipaddD','cam04','graphA')"><i class="material-icons">insert_chart</i></a>
                 </div>
 
                 <div class="col l1 m2 s2 btn-small waves-effect waves-light btn-ctrl">
