@@ -1,7 +1,7 @@
 # IVORY TOWER Materialie Updat
+-----------------------------
 
-
-## Last work 08/06/2019
+### Last work 08/06/2019
 
 fast resume, last commits:
 
@@ -13,4 +13,6 @@ fast resume, last commits:
 …s camera, abstraction graphic with ip adress variable done, fix style bottom of cards specially the wrapper controller, todo Next add variable id or class for graphique iframe because when done or reload button with the ipadress function it remove the class graphira so all graphic are removed, if the abstraction was good, do not forget to add variables into 2 functions, 1st ipaddress function & 2nd btn_grd function
 
 
-## 13/04/2020 Reprise de projet, voir si on peut evoluer sur de nouveaux angles
+### 13/04/2020
+
+Reprise de projet, voir si on peut evoluer sur de nouveaux angles
